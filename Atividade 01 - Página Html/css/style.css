@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.header{
+    position: fixed;
+    z-index: 1;
+}
+
+
+.box{
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.imgP{
+    height: 100px;
+    object-fit: cover;
+    width: 200px;
+}
+
+.body{
+    background-color: rgb(254, 203, 211);
+}
+
+.imgS{
+    height: 400px;
+    width: 100px;
+    object-fit: cover;
+    padding: auto;
+}
+
+.imgIntro{
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 40px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-inline-end: 20px;
+    padding-top: 20px;
+}
+
+.tIntro{
+    text-align: center;
+    font-family: "Sigmar", sans-serif;
+    font-size: 50px;
+    color: #409bad;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #6bc7d6;
+    padding-top: 50px;
+}
+
+.pIntro{
+    text-align: justify;
+    font-family: "Acme", serif;
+    font-size: 20px;
+    color: rgb(58, 57, 57);
+    padding-inline: 20px;
+}
+
+.tTrainer{
+    text-align: center;
+    font-family: "Sigmar", sans-serif;
+    font-size: 50px;
+    color: #409bad;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #6bc7d6;
+    justify-content: center;
+}
+
+.imgT{
+    max-width:200px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.card{
+    align-items: center;
+}
+
+.pInfo{
+    text-align: center;
+    font-size: 20px;
+}
+
+.slider{
+    padding-top: 100px;
+}
+
+.tAD{
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+}
+
+.section{
+    padding-inline: 20px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pAD{
+    font-size: 20px;
+}
+
+.num{
+    font-size: 30px;
+    margin-bottom: -2px;
+}
+
+.pFraco{
+    color: rgb(92, 91, 91);
+    margin-top: -15px;
+    font-size: 17px;
+}
+
+.cardP{
+    border-radius: 5px;
+}
+
+.card-img {
+    float: left;
+    max-width: 90px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.cardP-body {
+    text-align: left;
+    padding: 10px 10px;
+}
+
+.nome{
+    font-family: "Quicksand", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer{
+    background: rgb(250,235,215);
+    background: linear-gradient(0deg, rgba(250,235,215,1) 0%,  rgb(254, 203, 211) 100%);
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-item{
+    margin-inline: 30px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+
+.navLink{
+    color: azure;
+    text-decoration: none;
+}
+
+.navLink:hover{
+    color: #dc3545;
+    text-decoration: none;
+    transition: 0.5s;
+}
