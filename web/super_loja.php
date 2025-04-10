@@ -25,7 +25,7 @@
                 <img src="img/<?=$imagens[$i]?>" class="card-img-top tam-img" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?=$produtos[$i]?></h5>
-                        <a href="https://www.amazon.com.br/s?k=<?=$produtos[$i]?>" class="btn btn-primary">R$<?=number_format($valores[$i],decimals: 2, decimal_separator:',')?></a>
+                        <a target="_blank" href="https://www.amazon.com.br/s?k=<?=$produtos[$i]?>" class="btn btn-primary">R$<?=number_format($valores[$i],decimals: 2, decimal_separator:',')?></a>
                     </div>
                 </div>
             </div>
