@@ -25,7 +25,9 @@
         </thead>
         <tbody>
             <?php
+                $total =0;
                 for ($i=0; $i < count($valor) ; $i++) { 
+                    $total = $total + ($valor[$i] * $quantidades[$i]);
             ?>
                 <tr>
                     <td><?=$i + 1?></td>
@@ -43,5 +45,6 @@
         </tbody>
         <tr></tr>
     </table>
+    <h3>O total gasto no churrasco foi <?=number_format($total ,decimals: 2, decimal_separator:',')?></h3>
 </body>
 </html>
