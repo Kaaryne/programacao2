@@ -28,11 +28,11 @@
                 for ($i=0; $i < count($valor) ; $i++) { 
             ?>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><?=$i + 1?></td>
+                    <td><?=$ingredientes[$i]?></td>
+                    <td><?=$quantidades[$i]?></td>
+                    <td><?=number_format($valor[$i],decimals: 2, decimal_separator:',')?></td>
+                    <td><?=number_format($valor[$i] * $quantidades[$i],decimals: 2, decimal_separator:',')?></td>
                 </tr>
             <?php
                 }
