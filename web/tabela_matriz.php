@@ -9,9 +9,13 @@
 </head>
 <body class="container mt-5 w-75 m-auto">
     <?php
-        $ingredientes = ["carne", "sal", "carvão", "pão"];
-        $quantidades = [20, 1, 5, 100];
-        $valor = [25, 4, 6, 1.5];
+        $churrasco = 
+        [
+            ["ingrediente"=>"carne", "quantidade"=>20, "valorUnitario"=>45],
+            ["ingrediente"=>"sal", "quantidade"=>1, "valorUnitario"=>4],
+            ["ingrediente"=>"carvão", "quantidade"=>5, "valorUnitario"=>6],
+            ["ingrediente"=>"pão", "quantidade"=>100, "valorUnitario"=>1.5]
+        ];
     ?>    
 <table class="table">
         <thead>
@@ -34,7 +38,7 @@
                     <td><?=$churrasco[$i]['ingrediente']?></td>
                     <td><?=$churrasco[$i]['quantidade']?></td>
                     <td><?=number_format($churrasco[$i]['valorUnitario'], 2, decimal_separator:',')?></td>
-                    <td><?=number_format($churrasco[$i]['valorUnitario'] * $churrasco['quantidade'],decimals: 2, decimal_separator:',')?></td>
+                    <td><?=number_format($churrasco[$i]['valorUnitario'] * $churrasco[$i]['quantidade'],decimals: 2, decimal_separator:',')?></td>
                 </tr>
             <?php
                 }
@@ -45,6 +49,6 @@
         </tbody>
         <tr></tr>
     </table>
-    <h3>O total gasto no churrasco foi <?=number_format($total ,decimals: 2, decimal_separator:',')?></h3>
+    <h3>O total gasto no churrasco foi R$<?=number_format($total ,decimals: 2, decimal_separator:',')?></h3>
 </body>
 </html>
