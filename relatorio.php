@@ -28,7 +28,7 @@
                 for ($i=0; $i < count($tarefas) ; $i++) {
             ?>
                 <div class="col-4 mb-5 px-5 ">
-                    <div class="card " style="width: 25rem;">
+                    <div class="card" style="width: 25rem;">
                         <div class="card-body">
                             <h5 class="card-title"><?=$tarefas[$i]['titulo']?></h5>
                             <p class="card-text"><?=$tarefas[$i]['descricao']?></p>
